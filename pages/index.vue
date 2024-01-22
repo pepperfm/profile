@@ -145,7 +145,7 @@ const jobs = [
                 />
               </span>
             </template>
-            <NuxtLink external :to="item.link">
+            <NuxtLink external :to="item.link" target="_blank">
               <Icon :name="item.name" class="text-5xl" />
             </NuxtLink>
           </UTooltip>
