@@ -6,7 +6,7 @@ defineOgImageScreenshot()
 definePageMeta({
   title: 'About',
 })
-const icons = [
+const techs = [
   {
     name: 'i-logos-php',
     title: 'PHP',
@@ -28,19 +28,19 @@ const icons = [
     link: 'https://www.jetbrains.com/phpstorm/',
   },
   {
-    name: 'i-logos-javascript',
-    title: 'JavaScript',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  },
-  {
-    name: 'i-logos-vue',
-    title: 'Vue.js',
-    link: 'https://vuejs.org/',
+    name: 'Oauth',
+    title: 'OAuth',
+    link: 'https://oauth.net/',
   },
   {
     name: 'NovaSvg',
     title: 'Laravel Nova',
     link: 'https://nova.laravel.com/',
+  },
+  {
+    name: 'i-logos-vue',
+    title: 'Vue.js',
+    link: 'https://vuejs.org/',
   },
   {
     name: 'i-logos-mysql',
@@ -135,7 +135,7 @@ const jobs = [
       align="left"
     >
       <div class="grid-cols-3 grid place-items-center gap-y-6">
-        <div v-for="(item, index) in icons" :key="index" class="">
+        <div v-for="(item, index) in techs" :key="index" class="">
           <UTooltip>
             <template #text>
               <span class="flex items-center gap-1">{{ item.title }}
