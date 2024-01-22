@@ -140,7 +140,7 @@ const jobs = [
             <template #text>
               <span class="flex items-center gap-1">{{ item.title }}
                 <UIcon
-                  class="text-green-400"
+                  class="text-blue-400"
                   name="i-formkit-linkexternal"
                 />
               </span>
