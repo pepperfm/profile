@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import SocialsSection from "~/components/socials/SocialsSection.vue";
-import LandingSection from "~/components/landing/LandingSection.vue";
+import SocialsSection from '~/components/socials/SocialsSection.vue'
+import LandingSection from '~/components/landing/LandingSection.vue'
 
 definePageMeta({
-  title: 'Socials'
+  title: 'Socials',
 })
 </script>
 
@@ -13,11 +13,11 @@ definePageMeta({
       <div class="flex flex-col gap-4 items-center">
         <div class="flex items-center">
           <span>
-          Currently on Russia, Belgorod
+            Currently in Russia, Belgorod
           </span>
-          <UIcon class="text-primary" name="i-mdi-location"></UIcon>
+          <UIcon class="text-primary" name="i-mdi-location" />
         </div>
-        <SocialsSection></SocialsSection>
+        <SocialsSection />
       </div>
     </template>
   </LandingSection>
