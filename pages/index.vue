@@ -74,35 +74,40 @@ const jobs = [
     company: 'Simpatio',
     link: 'https://simpatio.ru/',
     svg: 'Simpatio',
-    description: 'Build API from scratch: ERP system, Blog, SMS landings page, widget',
+    heading: 'Maintaining current functionality and developing new features',
+    description: 'Rewrote the admin panel using Vue. Refactoring + writing API for the front-end in Vue.',
   },
   {
     title: 'resanta.ru',
     company: 'Resanta',
     link: 'https://resanta.ru/',
     svg: 'Resanta',
-    description: 'Build API from scratch: ERP system, Blog, SMS landings page, widget',
+    heading: 'Refactoring and supplementing an internal CRM admin panel',
+    description: 'There are many products (drills, saws, vacuum cleaners, grinding machines...). They have categories and subcategories, they have characteristics with values. All of this is packaged into boxes, then containers and loaded onto a ship for transportation according to contracts, which are drawn up for orders from different companies. 80% of the code was written in Laravel 5.7 with a query builder (no eloquent) + without adhering to MVC.',
   },
   {
     title: 'game-insignt.ru',
     company: 'Game Insight',
     link: 'https://www.game-insight.com/en',
     svg: 'GameInsight',
-    description: 'Build API from scratch: ERP system, Blog, SMS landings page, widget',
+    heading: 'Support and improvement of interactions between game servers/services (Helpshift, AppsFlyer, Flurry...) and internal services.',
+    description: 'Collection and processing of player data for handling by support agents. Also developed and maintained an internal service storing unified information about employees: information about the employee, which services are connected to him, which accesses are granted, equipment... Laravel Nova was used, plus data loading from Jira.',
   },
   {
     title: 'rang.ai',
     company: 'Ранг',
     link: 'https://rang.ai/',
     svg: 'Rang',
-    description: 'Build API from scratch: ERP system, Blog, SMS landings page, widget',
+    heading: 'Backend Developer',
+    description: 'Developing the back-end of an application in Laravel.',
   },
   {
     title: 'qubeek.io',
     company: 'Qubeek.io',
     link: 'https://qubeek.io/',
     svg: 'Qubeek',
-    description: 'Build API from scratch: ERP system, Blog, SMS landings page, widget',
+    heading: 'Backend Developer',
+    description: 'Outsourcing-development for state-owned companies.',
   },
 ]
 </script>
@@ -150,8 +155,10 @@ const jobs = [
     <LandingGrid>
       <LandingCard
         v-for="(job, index) in jobs" :key="index"
-        class="col-span-6 row-span-2" icon="i-heroicons-swatch"
+        class="col-span-6 row-span-2"
+        icon="i-heroicons-swatch"
         :description="job.description"
+        :accordion-label="job.heading"
       >
         <template #icon>
           <div>

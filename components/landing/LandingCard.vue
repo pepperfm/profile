@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { twJoin } from 'tailwind-merge'
-import { getSlotChildrenText } from '../../lib/slots'
 import { getNuxtLinkProps, nuxtLinkProps } from '#ui/utils'
 import type uiColors from '#ui-colors'
 import type { card as cardConfig } from '#ui/ui.config'
@@ -17,6 +16,10 @@ const props = defineProps({
     default: undefined,
   },
   description: {
+    type: String,
+    default: undefined,
+  },
+  accordionLabel: {
     type: String,
     default: undefined,
   },
@@ -123,9 +126,9 @@ const ariaLabel = computed(() => (props.title || (slots.title && getSlotChildren
           </slot>
         </p>
 
-        <p v-if="description || $slots.description" :class="ui.description">
+        <p v-if="(description || $slots.description) && accordionLabel" :class="ui.description">
           <slot name="description">
-            {{ description }}
+            <UAccordion :items="[{ label: accordionLabel, content: description }]" />
           </slot>
         </p>
 
