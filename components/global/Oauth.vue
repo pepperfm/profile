@@ -9,12 +9,11 @@
     <g id="SVGRepo_bgCarrier" stroke-width="0" />
     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
     <g id="SVGRepo_iconCarrier"><title>the-modern-web/web-authentication-api</title>
-      <desc>Created with Sketch.</desc>
       <defs />
       <g id="the-modern-web/web-authentication-api" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g
-          id="container" transform="translate(2.000000, 2.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#3F3F49"
-          stroke-width="2"
+          id="container" transform="translate(2.000000, 2.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#5691f7"
+          stroke-width="1"
         >
           <rect id="mask" x="-1" y="-1" width="71" height="71" rx="14" />
         </g>
