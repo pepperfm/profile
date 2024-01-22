@@ -187,7 +187,7 @@ const jobs = [
             <UIcon class="text-primary" name="i-mdi-location" />
           </div>
           <SocialsSection />
-          <!-- <div>Hobbies: cooking 🍳, guitar 🎸, video games 🎮, travelling ✈️, mechanical keyboards ⌨️</div> -->
+          <div>Hobbies: music 🎸, psychology 🧠, movies 🎬, cats 🐈, coffee ☕ and memes 🗿</div>
         </div>
       </template>
     </LandingSection>
