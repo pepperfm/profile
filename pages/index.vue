@@ -110,6 +110,29 @@ const jobs = [
     description: 'Outsourcing-development for state-owned companies.',
   },
 ]
+const packages = [
+  {
+    title: 'api-responder-for-laravel',
+    company: 'API responder',
+    to: 'https://github.com/pepperfm/api-responder-for-laravel',
+    icon: 'Api',
+    description: 'Api responder for Laravel',
+  },
+  {
+    title: 'filament-json',
+    company: 'Simpatio',
+    to: 'https://github.com/pepperfm/filament-json',
+    icon: 'JsonColumn',
+    description: 'Filament plugin for processing JSON field',
+  },
+  {
+    title: 'moonshine',
+    company: 'Moonshine',
+    to: 'https://github.com/moonshine-software/moonshine',
+    icon: 'Moonshine',
+    description: 'Administration panel for Laravel framework',
+  },
+]
 </script>
 
 <template>
@@ -166,7 +189,7 @@ const jobs = [
           </div>
         </template>
         <template #title>
-          <NuxtLink class="hover:text-primary flex gap-1 items-center" :to="job.link">
+          <NuxtLink class="hover:text-primary flex gap-1 items-center" target="_blank" :to="job.link">
             <span>{{ job.title }}</span>
             <UIcon
               class="text-xs"
@@ -176,6 +199,21 @@ const jobs = [
         </template>
       </LandingCard>
     </LandingGrid>
+
+    <LandingSection title="My packages and contributions">
+      <PageGrid>
+        <PageCard v-for="(item, index) in packages" :key="index" v-bind="item" target="_blank">
+          <template #icon>
+            <div>
+              <Icon :name="item.icon" class="text-5xl" />
+            </div>
+          </template>
+          <template #description>
+            <span class="line-clamp-2">{{ item.description }}</span>
+          </template>
+        </PageCard>
+      </PageGrid>
+    </LandingSection>
 
     <LandingSection title="Additional info">
       <template #description>
