@@ -14,8 +14,8 @@
   "dependencies": {
     "@iconify/json": "^2.2.168",
     "@nuxt/image": "1.3.0",
-    "@nuxt/ui": "^2.12.0",
-    "@nuxt/ui-pro": "^0.7.0",
+    "@nuxt/ui": "^2.18",
+    "@nuxt/ui-pro": "^1.3",
     "@vercel/analytics": "^1.3.1",
     "nuxt-icon": "^0.6.8",
     "typescript": "^5.3.3"

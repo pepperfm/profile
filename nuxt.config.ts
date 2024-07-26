@@ -2,19 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxtjs/google-fonts', 'nuxt-icon', '@nuxt/image', 'nuxt-og-image'],
-  colorMode: {
-    preference: 'system',
-  },
+  extends: ['@nuxt/ui-pro'],
   site: {
     url: 'https://pepperfm.vercel.app/',
-  },
-  ui: {
-    icons: ['logos', 'simple-icons', 'mdi', 'majesticons', 'formkit'],
   },
   ogImage: {
     compatibility: {
       prerender: {
-        chromium: 'node',
+        chromium: 'on-demand',
         satori: false,
       },
     },
@@ -33,5 +28,4 @@ export default defineNuxtConfig({
       },
     },
   },
-
 })

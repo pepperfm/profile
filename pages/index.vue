@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LandingSection from '~/components/landing/LandingSection.vue'
 import SocialsSection from '~/components/socials/SocialsSection.vue'
 
 defineOgImageScreenshot()
@@ -137,7 +136,7 @@ const packages = [
 
 <template>
   <UContainer>
-    <LandingSection
+    <ULandingSection
       icon="i-heroicons-rocket-launch"
       description="As a developer specializing in Laravel, I focus on creating efficient, scalable web solutions that prioritize user experience."
     >
@@ -151,8 +150,8 @@ const packages = [
           </span>
         </span>
       </template>
-    </LandingSection>
-    <LandingSection
+    </ULandingSection>
+    <ULandingSection
       title="Developing Accessible Applications with Modern Tech"
       description="As a backend developer, I use the latest technologies to create clean and test-covered application code. I make sure that the best code is code that is easy to read for everyone."
       align="left"
@@ -174,12 +173,11 @@ const packages = [
           </UTooltip>
         </div>
       </div>
-    </LandingSection>
-    <LandingGrid>
-      <LandingCard
+    </ULandingSection>
+    <ULandingGrid>
+      <ULandingCard
         v-for="(job, index) in jobs" :key="index"
         class="col-span-6 row-span-2"
-        icon="i-heroicons-swatch"
         :description="job.description"
         :accordion-label="job.heading"
       >
@@ -197,12 +195,15 @@ const packages = [
             />
           </NuxtLink>
         </template>
-      </LandingCard>
-    </LandingGrid>
+        <template #description>
+          <UAccordion :items="[{ label: job.heading, content: job.description }]" />
+        </template>
+      </ULandingCard>
+    </ULandingGrid>
 
-    <LandingSection title="My packages and contributions">
-      <PageGrid>
-        <PageCard v-for="(item, index) in packages" :key="index" v-bind="item" target="_blank">
+    <ULandingSection title="My packages and contributions">
+      <UPageGrid>
+        <UPageCard v-for="(item, index) in packages" :key="index" v-bind="item" target="_blank">
           <template #icon>
             <div>
               <Icon :name="item.icon" class="text-5xl" />
@@ -211,11 +212,11 @@ const packages = [
           <template #description>
             <span class="line-clamp-2">{{ item.description }}</span>
           </template>
-        </PageCard>
-      </PageGrid>
-    </LandingSection>
+        </UPageCard>
+      </UPageGrid>
+    </ULandingSection>
 
-    <LandingSection title="Additional info">
+    <ULandingSection title="Additional info">
       <template #description>
         <div class="flex flex-col gap-4 items-center">
           <div class="flex items-center">
@@ -228,6 +229,6 @@ const packages = [
           <div>Hobbies: music 🎸, psychology 🧠, movies 🎬, cats 🐈, coffee ☕ and memes 🗿</div>
         </div>
       </template>
-    </LandingSection>
+    </ULandingSection>
   </UContainer>
 </template>

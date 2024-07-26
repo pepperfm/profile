@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import SocialsSection from '~/components/socials/SocialsSection.vue'
-import LandingSection from '~/components/landing/LandingSection.vue'
 
 definePageMeta({
   title: 'Socials',
@@ -8,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-  <LandingSection title="Feel free to contact me">
+  <ULandingSection title="Feel free to contact me">
     <template #description>
       <div class="flex flex-col gap-4 items-center">
         <div class="flex items-center">
@@ -20,7 +19,7 @@ definePageMeta({
         <SocialsSection />
       </div>
     </template>
-  </LandingSection>
+  </ULandingSection>
 </template>
 
 <style scoped>
