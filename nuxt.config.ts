@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxtjs/google-fonts', 'nuxt-icon', '@nuxt/image', 'nuxt-og-image'],
   extends: ['@nuxt/ui-pro'],
   site: {
-    url: 'https://pepperfm.vercel.app/',
+    url: 'https://pepperfm.ru/',
   },
   ogImage: {
     compatibility: {
