@@ -7,67 +7,80 @@ definePageMeta({
 })
 const techs = [
   {
-    name: 'i-logos-php',
+    name: 'logos:php',
     title: 'PHP',
-    link: 'https://php.com/',
+    link: 'https://php.net/',
   },
   {
-    name: 'i-logos-laravel',
+    name: 'logos:laravel',
     title: 'Laravel',
     link: 'https://laravel.com/',
   },
   {
-    name: 'i-logos-docker-icon',
+    name: 'logos:docker-icon',
     title: 'Docker',
     link: 'https://www.docker.com/',
   },
   {
-    name: 'i-logos-phpstorm',
+    name: 'logos:phpstorm',
     title: 'PhpStorm',
     link: 'https://www.jetbrains.com/phpstorm/',
   },
+  // {
+  //   name: 'Oauth',
+  //   title: 'OAuth',
+  //   link: 'https://oauth.net/',
+  // },
   {
-    name: 'Oauth',
+    name: 'logos:oauth',
     title: 'OAuth',
     link: 'https://oauth.net/',
   },
   {
-    name: 'NovaSvg',
+    name: 'Nova',
     title: 'Laravel Nova',
     link: 'https://nova.laravel.com/',
   },
   {
-    name: 'i-logos-vue',
+    name: 'logos:vue',
     title: 'Vue.js',
     link: 'https://vuejs.org/',
   },
   {
-    name: 'i-logos-mysql',
+    name: 'logos:mysql',
     title: 'MySql',
     link: 'https://www.mysql.com/',
   },
   {
-    name: 'i-logos-postgresql',
+    name: 'logos:postgresql',
     title: 'PostgreSQL',
     link: 'https://www.postgresql.org/',
   },
   {
-    name: 'i-logos-swagger',
+    name: 'logos:swagger',
     title: 'Swagger',
     link: 'https://swagger.io/',
   },
   {
-    name: 'i-logos-redis',
+    name: 'logos:redis',
     title: 'Redis',
     link: 'https://redis.io/',
   },
   {
-    name: 'i-logos-sentry-icon',
+    name: 'logos:sentry-icon',
     title: 'Sentry',
     link: 'https://sentry.io/',
   },
 ]
 const jobs = [
+  {
+    title: 'GoStore',
+    company: 'GoStore',
+    link: 'https://go-store.space/',
+    svg: 'logos:telegram',
+    heading: 'Owner | Telegram e-commerce constructor',
+    description: 'Fast and easy way to create a Web-view in TG mini-app for your business. The bot is created in a few clicks, and you can start selling your products.',
+  },
   {
     title: 'simpatio.ru',
     company: 'Simpatio',
@@ -151,29 +164,32 @@ const packages = [
         </span>
       </template>
     </ULandingSection>
+
     <ULandingSection
       title="Developing Accessible Applications with Modern Tech"
       description="As a backend developer, I use the latest technologies to create clean and test-covered application code. I make sure that the best code is code that is easy to read for everyone."
       align="left"
     >
       <div class="grid-cols-3 grid place-items-center gap-y-6">
-        <div v-for="(item, index) in techs" :key="index" class="">
+        <div v-for="(item, index) in techs" :key="index">
           <UTooltip>
             <template #text>
-              <span class="flex items-center gap-1">{{ item.title }}
-                <UIcon
+              <span class="flex items-center gap-1">
+                {{ item.title }}
+                <Icon
                   class="text-blue-400"
                   name="i-formkit-linkexternal"
                 />
               </span>
             </template>
-            <NuxtLink external :to="item.link" target="_blank">
-              <Icon :name="item.name" class="text-5xl" />
-            </NuxtLink>
+            <ULink :to="item.link" target="_blank">
+              <Icon :name="item.name" size="3rem" />
+            </ULink>
           </UTooltip>
         </div>
       </div>
     </ULandingSection>
+
     <ULandingGrid>
       <ULandingCard
         v-for="(job, index) in jobs" :key="index"
@@ -183,7 +199,7 @@ const packages = [
       >
         <template #icon>
           <div>
-            <Icon :name="job.svg" class="text-5xl" />
+            <UIcon :name="job.svg" size="3rem" />
           </div>
         </template>
         <template #title>
@@ -206,7 +222,7 @@ const packages = [
         <UPageCard v-for="(item, index) in packages" :key="index" v-bind="item" target="_blank">
           <template #icon>
             <div>
-              <Icon :name="item.icon" class="text-5xl" />
+              <UIcon :name="item.icon" mode="svg" size="3rem" />
             </div>
           </template>
           <template #description>
