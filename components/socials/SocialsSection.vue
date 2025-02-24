@@ -6,9 +6,9 @@
         class="hover:text-primary underline underline-primary flex  items-center justify-center"
         external
         target="_blank"
-        to="https://www.instagram.com/pepper_fm/"
+        to="https://t.me/pepper_fm"
       >
-        <UIcon name="i-simple-icons-instagram" />
+        <UIcon name="i-simple-icons-telegram" />
       </NuxtLink>
       <NuxtLink
         class="hover:text-primary underline underline-primary flex  items-center justify-center"
@@ -17,14 +17,6 @@
         to="https://www.linkedin.com/in/dmitry-gaponenko-849692271"
       >
         <UIcon name="i-simple-icons-linkedin" />
-      </NuxtLink>
-      <NuxtLink
-        class="hover:text-primary underline underline-primary flex  items-center justify-center"
-        external
-        target="_blank"
-        to="https://t.me/pepper_fm"
-      >
-        <UIcon name="i-simple-icons-telegram" />
       </NuxtLink>
       <NuxtLink
         class="hover:text-primary underline underline-primary flex  items-center justify-center"

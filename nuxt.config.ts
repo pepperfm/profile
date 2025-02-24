@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   extends: ['@nuxt/ui-pro'],
   site: {
-    url: 'https://pepperfm.ru/',
+    url: 'https://pepperfm.com/',
   },
   compatibilityDate: '2024-07-29',
   ogImage: {

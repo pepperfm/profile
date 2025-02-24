@@ -235,7 +235,19 @@ const packages = [
       </ULandingCard>
     </ULandingGrid>
 
-    <ULandingSection title="My packages and contributions">
+    <ULandingSection
+      title="My packages and contributions"
+      :links="[
+        {
+          label: 'Explore more',
+          trailingIcon: 'i-heroicons-arrow-right',
+          size: 'lg',
+          target: '_blank',
+          external: true,
+          to: 'https://docs.pepperfm.com/'
+        }
+      ]"
+    >
       <UPageGrid>
         <UPageCard v-for="(item, index) in packages" :key="index" v-bind="item" target="_blank">
           <template #icon>

@@ -20,10 +20,5 @@ useServerSeoMeta({
     <template #left>
       Copyright © {{ new Date().getFullYear() }}
     </template>
-    <template #right>
-      <p class="text-gray-500">
-        Build with Nuxt 3
-      </p>
-    </template>
   </MainFooter>
 </template>
