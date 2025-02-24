@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
 import MainHeader from '~/components/layout/MainHeader.vue'
 import MainFooter from '~/components/layout/MainFooter.vue'
 
@@ -13,6 +14,7 @@ useServerSeoMeta({
 
 <template>
   <MainHeader />
+  <Analytics/>
   <div class="min-h-[calc(100vh-60px)]">
     <NuxtPage />
   </div>
