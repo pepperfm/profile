@@ -1,37 +1,53 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config} from '@egoist/tailwindcss-icons'
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   modules: [
-    '@nuxt/ui',
-    '@nuxtjs/google-fonts',
+    '@nuxt/eslint',
     '@nuxt/image',
-    'nuxt-og-image',
-    "@nuxt/icon"
+    '@nuxt/ui-pro',
+    '@nuxt/content',
   ],
-  extends: ['@nuxt/ui-pro'],
-  site: {
-    url: 'https://pepperfm.com/',
+
+  ui: {
+    fonts: false,
   },
-  compatibilityDate: '2024-07-29',
-  ogImage: {
-    compatibility: {
-      prerender: {
-        chromium: 'on-demand',
-        satori: false,
-      },
+
+  devtools: {
+    enabled: true,
+  },
+
+  css: ['~/assets/css/main.css'],
+
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
     },
   },
-  googleFonts: {
-    download: true,
-    inject: true,
-    base64: true,
-    prefetch: true,
-    preconnect: true,
-    preload: true,
-    families: {
-      Karla: {
-        wght: [400, 600, 700],
-        ital: [200, 400, 600, 700],
+
+  mdc: {
+    highlight: {
+      noApiRoute: false,
+    },
+  },
+
+  routeRules: {
+    '/': { prerender: true },
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  compatibilityDate: '2025-01-15',
+
+  typescript: {
+    strict: false,
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs',
       },
     },
   },

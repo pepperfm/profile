@@ -1,0 +1,120 @@
+title: Nuxt UI Pro - Landing template
+description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
+hero:
+  title: Hello, My name is [Dmitry]{.text-(--ui-primary)} <br> I am a Backend Developer
+  description: As a developer specializing in Laravel, I focus on creating efficient, scalable web solutions that prioritize user experience.
+sections:
+  - title: 'Developing  [Accessible]{.text-(--ui-primary)} Applications with [Modern]{.text-(--ui-primary)} Tech'
+    description: As a backend developer, I use the latest technologies to create clean and test-covered application code. I make sure that the best code is code that is easy to read for everyone.
+    techs:
+      - name: 'logos:php'
+        title: 'PHP'
+        link: 'https://php.net/'
+      - name: 'logos:laravel'
+        title: 'Laravel'
+        link: 'https://laravel.com/'
+      - name: 'logos:docker-icon'
+        title: 'Docker'
+        link: 'https://www.docker.com/'
+      - name: 'logos:phpstorm'
+        title: 'PhpStorm'
+        link: 'https://www.jetbrains.com/phpstorm/'
+      - name: 'Filament'
+        title: 'Filament'
+        link: 'https://filamentphp.com/'
+      - name: 'Nova'
+        title: 'Laravel Nova'
+        link: 'https://nova.laravel.com/'
+      - name: 'logos:vue'
+        title: 'Vue.js'
+        link: 'https://vuejs.org/'
+      - name: 'logos:nuxt-icon'
+        title: 'Nuxt'
+        link: 'https://ui.nuxt.com/'
+      - name: 'logos:oauth'
+        title: 'OAuth'
+        link: 'https://oauth.net/'
+      - name: 'logos:mysql'
+        title: 'MySql'
+        link: 'https://www.mysql.com/'
+      - name: 'logos:postgresql'
+        title: 'PostgreSQL'
+        link: 'https://www.postgresql.org/'
+      - name: 'logos:swagger'
+        title: 'Swagger'
+        link: 'https://swagger.io/'
+      - name: 'logos:redis'
+        title: 'Redis'
+        link: 'https://redis.io/'
+      - name: 'logos:sentry-icon'
+        title: 'Sentry'
+        link: 'https://sentry.io/'
+features:
+  title: My [job]{.text-(--ui-primary)} experience
+  features:
+    - title: GoStore
+      heading: 'Owner | Telegram e-commerce constructor'
+      description: Fast and easy way to create a Web-view in TG mini-app for your business. The bot is created in a few clicks, and you can start selling your products
+      icon: logos:telegram
+      to: https://go-store.space/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: Simpatio
+      heading: Restaurant-pizzeria website
+      description: Maintaining current functionality and developing new features. Rewrote the admin panel using Vue. Refactoring + writing API for the front-end in Vue
+      icon: Simpatio
+      to: https://simpatio.ru/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: Resanta
+      heading: Electrical equipment sales company
+      description: Refactoring and supplementing an internal CRM admin panel. There are many products (drills, saws, vacuum cleaners, grinding machines...). They have categories and subcategories, they have characteristics with values. All of this is packaged into boxes, then containers and loaded onto a ship for transportation according to contracts, which are drawn up for orders from different companies. 80% of the code was written in Laravel 5.7 with a query builder (no eloquent) + without adhering to MVC
+      icon: Resanta
+      to: https://resanta.ru/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: Game Insight
+      heading: Game development company
+      description: 'Support and improvement of interactions between game servers/services (Helpshift, AppsFlyer, Flurry...) and internal services. Collection and processing of player data for handling by support agents. Also developed and maintained an internal service storing unified information about employees: information about the employee, which services are connected to him, which accesses are granted, equipment... Laravel Nova was used, plus data loading from Jira.'
+      icon: GameInsight
+      to: https://www.game-insight.com/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: Rang.ai
+      heading: Review collection service for attracting customers from maps
+      description: Development of the backend for web applications, including writing APIs for the frontend, working with ERP systems, integrating external systems, and data parsing
+      icon: Rang
+      to: https://rang.ai/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: Qubeek.io
+      heading: Outsourcing-development for state-owned companies
+      description: Development of the backend for web applications, including writing APIs for the frontend, working with ERP systems, integrating external systems, and data parsing
+      icon: Qubeek
+      to: https://qubeek.io/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: TargetHunter
+      heading: An ecosystem of services for social media promotion
+      description: Refactored the core of the old project into a completely new Laravel project
+      icon: TargetHunter
+      to: https://targethunter.ru/
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+steps:
+  title: 'My [packages]{.text-(--ui-primary)} and contributions'
+  items:
+    - title: API responder
+      description: Api responder for laravel
+      to: https://github.com/pepperfm/api-responder-for-laravel
+      icon: Api
+    - title: Moonshine
+      description: Administration panel for Laravel framework
+      to: https://github.com/moonshine-software/moonshine
+      icon: Moonshine
+    - title: Filament Json
+      description: Filament plugin for processing JSON field
+      to: https://github.com/pepperfm/filament-json
+      icon: JsonColumn
+cta:
+  title: Additional [info]{.text-(--ui-primary)}
