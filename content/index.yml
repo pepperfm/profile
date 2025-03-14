@@ -3,6 +3,14 @@ description: Creating Web Applications and API services
 hero:
   title: Hello, My name is [Dmitry]{.text-(--ui-primary)} <br> I am a Backend Developer
   description: As a developer specializing in Laravel, I focus on creating efficient, scalable web solutions that prioritize user experience.
+  links:
+    - label: 'By me a...'
+      to: 'https://www.donationalerts.com/r/pepper_fm'
+      external: true
+      target: _blank
+      color: 'neutral'
+      variant: 'subtle'
+      icon: 'DonationAlerts'
 sections:
   - title: 'Developing  [Accessible]{.text-(--ui-primary)} Applications with [Modern]{.text-(--ui-primary)} Tech'
     description: As a backend developer, I use the latest technologies to create clean and test-covered application code. I make sure that the best code is code that is easy to read for everyone.
