@@ -54,7 +54,7 @@
         <g
           id="Brand"
           transform="translate(-536.000000, -275.000000)"
-          fill="var(--ui-primary)"
+          fill="url(#linearGradient-2)"
           fill-rule="nonzero"
         >
           <g
