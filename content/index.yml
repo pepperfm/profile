@@ -4,6 +4,12 @@ hero:
   title: Hello, My name is [Dmitry]{.text-(--ui-primary)} <br> I am a Backend Developer
   description: As a developer specializing in Laravel, I focus on creating efficient, scalable web solutions that prioritize user experience.
   links:
+    - to: 'https://www.tinkoff.ru/rm/r_NNAYMilYWl.KHfeJyVckt/U7gaB48449'
+      external: true
+      target: _blank
+      color: 'neutral'
+      variant: 'subtle'
+      icon: 'heroicons:credit-card'
     - to: 'https://boosty.to/pepper_fm/donate'
       external: true
       target: _blank
