@@ -1,5 +1,9 @@
 <script setup lang="ts">
+// import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import SocialsSection from '~/components/SocialsSection.vue'
+
+// const breakpoints = useBreakpoints(breakpointsTailwind)
+// const marqueeBreakpoints = breakpoints.greaterOrEqual('lg')
 
 const { data: page } = await useAsyncData('home', () => {
   return queryCollection('content').first()
@@ -56,7 +60,7 @@ useSeoMeta({
         />
       </template>
       <div class="grid-cols-3 grid place-items-center gap-y-6">
-        <div v-for="(item, index) in section.techs" :key="index">
+        <div v-for="(item, i) in section.techs" :key="i">
           <UTooltip>
             <template #content>
               <span>{{ item.title }}</span>
@@ -73,6 +77,24 @@ useSeoMeta({
           </UTooltip>
         </div>
       </div>
+      <template #bottom>
+        <UPageMarquee
+          pause-on-hover
+          class="pb-5"
+          :overlay="false"
+        >
+          <UPageCard
+            v-for="(testimonial, key) in page.testimonials"
+            :key="key"
+            variant="subtle"
+            :description="testimonial.quote"
+            :ui="{
+              description: 'line-clamp-3',
+            }"
+            class="w-35 shrink-0"
+          />
+        </UPageMarquee>
+      </template>
     </UPageSection>
 
     <UPageSection
@@ -207,7 +229,7 @@ useSeoMeta({
             <UIcon class="text-primary" name="i-mdi-location" />
           </div>
           <SocialsSection />
-          <div>Hobbies: music 🎸, psychology 🧠, movies 🎬, cats 🐈,  ☕ and memes 🗿</div>
+          <div>Hobbies: music 🎸, psychology 🧠, movies 🎬, cats 🐈, coffee ☕ and memes 🗿</div>
         </div>
       </template>
 

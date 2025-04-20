@@ -68,6 +68,28 @@ sections:
       - name: 'logos:sentry-icon'
         title: 'Sentry'
         link: 'https://sentry.io/'
+testimonials:
+  - quote: 'PHP'
+  - quote: 'Laravel'
+  - quote: 'OOP'
+  - quote: 'SQL'
+  - quote: 'Laravel Idea'
+  - quote: 'Docker'
+  - quote: 'Redis'
+  - quote: 'VueJs'
+  - quote: 'Linux'
+  - quote: 'Pint'
+  - quote: 'Api'
+  - quote: 'Laravel Nova'
+  - quote: 'Swagger'
+  - quote: 'OAuth'
+  - quote: 'CS-Fixer'
+  - quote: 'Laravel Ray'
+  - quote: 'NuxtJs'
+  - quote: 'Pest (TDD)'
+  - quote: 'Filament'
+  - quote: 'CI/CD'
+  - quote: 'Inertia'
 features:
   title: My [job]{.text-(--ui-primary)} experience
   features:
