@@ -1,9 +1,8 @@
 <script setup lang="ts">
-// import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import SocialsSection from '~/components/SocialsSection.vue'
 
-// const breakpoints = useBreakpoints(breakpointsTailwind)
-// const marqueeBreakpoints = breakpoints.greaterOrEqual('lg')
+const breakpoints = useBreakpoints(breakpointsTailwind)
 
 const { data: page } = await useAsyncData('home', () => {
   return queryCollection('content').first()
@@ -81,7 +80,7 @@ useSeoMeta({
         <UPageMarquee
           pause-on-hover
           class="pb-5"
-          :overlay="false"
+          :overlay="breakpoints.greaterOrEqual('lg').value"
         >
           <UPageCard
             v-for="(testimonial, key) in page.testimonials"
