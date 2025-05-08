@@ -3,6 +3,7 @@ import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import SocialsSection from '~/components/SocialsSection.vue'
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
+const getLg = breakpoints.greaterOrEqual('lg')
 
 const { data: page } = await useAsyncData('home', () => {
   return queryCollection('content').first()
@@ -76,24 +77,25 @@ useSeoMeta({
           </UTooltip>
         </div>
       </div>
-      <template #bottom>
-        <UPageMarquee
-          pause-on-hover
-          class="pb-5"
-          :overlay="breakpoints.greaterOrEqual('lg').value"
-        >
-          <UPageCard
-            v-for="(testimonial, key) in page.testimonials"
-            :key="key"
-            variant="subtle"
-            :description="testimonial.quote"
-            :ui="{
-              description: 'line-clamp-3',
-            }"
-            class="w-35 shrink-0"
-          />
-        </UPageMarquee>
-      </template>
+    </UPageSection>
+
+    <UPageSection>
+      <UPageMarquee
+        pause-on-hover
+        class="pb-5"
+        :overlay="getLg"
+      >
+        <UPageCard
+          v-for="(testimonial, key) in page.testimonials"
+          :key="key"
+          variant="subtle"
+          :description="testimonial.quote"
+          :ui="{
+            description: 'line-clamp-3',
+          }"
+          class="w-35 shrink-0"
+        />
+      </UPageMarquee>
     </UPageSection>
 
     <UPageSection
