@@ -96,13 +96,13 @@ testimonials:
 features:
   title: My [job]{.text-(--ui-primary)} experience
   features:
-    - title: GoStore
-      heading: 'Owner | Telegram e-commerce constructor'
-      description: Fast and easy way to create a Web-view in TG mini-app for your business. The bot is created in a few clicks, and you can start selling your products
-      icon: logos:telegram
-      to: https://go-store.space/
-      ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    # - title: GoStore
+    #   heading: 'Owner | Telegram e-commerce constructor'
+    #   description: Fast and easy way to create a Web-view in TG mini-app for your business. The bot is created in a few clicks, and you can start selling your products
+    #   icon: logos:telegram
+    #   to: https://go-store.space/
+    #   ui:
+    #     leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Simpatio
       heading: Restaurant-pizzeria website
       description: Maintaining current functionality and developing new features. Rewrote the admin panel using Vue. Refactoring + writing API for the front-end in Vue
